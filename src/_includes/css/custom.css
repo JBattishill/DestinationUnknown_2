@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* scrollbar styles */
+
+@media(min-width: 576px) {
+    body::-webkit-scrollbar-track
+    {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F7FA;
+    }
+
+    body::-webkit-scrollbar
+    {
+        width: 6px;
+        background-color: #F5F7FA;
+    }
+
+    body::-webkit-scrollbar-thumb
+    {
+        background-color: #F7A1C9;
+    }
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: all 0.25s;
+}
+
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger:hover [class*="-bun"] {
+  background: #333;
+}
+
+.hamburger__top-bun {
+  transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+  transform: translateY(3px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+  transform:
+    rotate(45deg)
+    translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+  transform:
+    rotate(-45deg)
+    translateY(0px);
+}
+
+*:hover {
+    transition: all 400ms ease;
+}
+.animatedbg {
+  background: #116F7E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #116F7E, #6868d5, #6617A6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #116F7E, #066098, #6617A6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
+  animation: gradient 15s 5s ease-in infinite;
+}
+.header {
+  background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
+  animation: gradient 15s 5s ease-in infinite;
+}
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+.content__container {
+    overflow: hidden;
+    height: 40px;
+}
+
+.content__container__list {
+    list-style: none;
+
+    animation-name: change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+    margin: 0;
+    line-height: 40px;
+}
+
+@keyframes change {
+    0%, 7.14%, 100% {transform:translate3d(0,0,0);}
+    14.28% {transform:translate3d(0,-14.28%,0);}
+    21.42% {transform:translate3d(0,-28.57%,0);}
+    28.57% {transform:translate3d(0,-42.85%,0);}
+    35.71% {transform:translate3d(0,-57.14%,0);}
+    42.85% {transform:translate3d(0,-71.42%,0);}
+    53.5% {transform:translate3d(0,-85.71%,0);}
+    64.28% {transform:translate3d(0,-71.42%,0);}
+    71.42% {transform:translate3d(0,-57.14%,0);}
+    78.54% {transform:translate3d(0,-42.85%,0);}
+    85.71% {transform:translate3d(0,-28.57%,0);}
+    92.85% {transform:translate3d(0,-14.28%,0);}
+}
+
+.tippy-tooltip {
+    background-color: #ccc;
+    color: #C3DAFE;
+    opacity: 0.85;
+}
+
+.tippy-tooltip[data-animatefill] {
+    background-color: transparent;
+}
+
+.tippy-tooltip .tippy-backdrop {
+    background-color: #ccc;
+    opacity: 0.5;
+}
+
+.tippy-tooltip[x-placement^='bottom'] .tippy-arrow {
+    border-bottom-color: #ccc;
+}
+
+.clip {
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}

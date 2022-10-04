@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Web Design",
+    "icon": "icon2.svg",
+    "content": "Web Design"
+  },
+  {
+    "title": "Wireframing",
+    "icon": "icon1.svg",
+    "content": "Low fidelity, Figma high fidelity"
+  },
+  {
+    "title": "Web Development",
+    "icon": "icon3.svg",
+    "content": "Experience working with HTML, CSS, Javascript, Nunjucks, Node.js, "
+  },
+  {
+    "title": "Branding",
+    "icon": "icon4.svg",
+    "content": "Using profressional software such as Adobe Creative Suite to create Logos, social presence, pages and posts, packaging, content writing, "
+  },
+  {
+    "title": "Corporate Design",
+    "icon": "icon5.svg",
+    "content": "Inforgraphics"
+  },
+  {
+    "title": "Consultation",
+    "icon": "icon6.svg",
+    "content": "Brand persona, process analysis, documentation"
+  }
+]

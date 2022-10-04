@@ -1,0 +1,110 @@
+{% for item in collections.sections %}
+  {% if item.data.type === 'portfolio' %}
+<div class="w-full min-h-screen flex flex-col justify-center items-center">		
+	<div class="w-full items-left container px-2 md:px-6 lg:px-4 max-w-6xl mx-auto">
+		<nav class="flex py-6" aria-label="Breadcrumb">
+			<ol role="list" class="flex overflow-hidden text-gray-800 border border-gray-800 rounded-lg">
+				<li class="flex items-center">
+				<a class="flex items-center h-10 px-4 transition-colors bg-gray-200 hover:text-gray-900" href="/">
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+					</svg>
+					<span class="ml-1.5 font-medium text-xs"> Home </span>
+				</a>
+				</li>
+
+				<li class="relative flex items-center">
+				<span class="absolute inset-y-0 w-4 h-10 bg-gray-200 -left-px clip"> </span>
+				<a
+					class="flex items-center h-10 pl-6 pr-2 text-xs transition-colors bg-gray-50 hover:text-gray-900"
+					href="/portfolio"
+				>
+					Portfolio
+				</a>
+				</li>
+			</ol>
+		</nav>
+	</div>  
+	
+    <!--Container-->
+		<div class="container py-6 md:px-0 lg:px-2 max-w-6xl mx-auto">
+			
+			<div class="mx-2">
+				
+				<div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+					
+				<!--Lead Card-->
+				<div class="flex h-full p-2 rounded-t rounded-b-none overflow-hidden">
+					<a href="/goulashgalley" class="flex bg-white flex-wrap rounded-t rounded-b-none no-underline hover:no-underline">
+						<div class="w-full md:w-2/3 rounded-t">	
+							<img src="/assets/img/goulashgalley/brand.svg" class="h-full rounded-t w-full shadow">
+						</div>
+
+						<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+								<p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">Adobe Illustrator</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6 mb-2">Goulash Galley</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-4">
+									Veronica from Goulash Galley in Tharwa knew exactly what she wanted for the kitchen's logo when she contacted JUX. Armed with examples and mock-ups, Veronica was hoping for quick delivery of the final design.  She wasn't disappointed. 
+									<br> <br>
+									Inspired by Hungarian folk art, culture and colours, came together in under a month. Jarryd worked closely with Veronica the whole time, collaborating to get things just right.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!--Posts Container-->
+				<div class="flex flex-wrap justify-between py-12 sm:-mx-2 lg:mx-0">
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-2 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="/authenticbuyers" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="/assets/img/authenticbuyers/stacked.svg" class="mx-auto h-full md:h-64 rounded-t p-2">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">Adobe Illustrator</p>
+								<div class="w-full font-bold text-lg text-gray-900 px-6">Authentic Buyers Agency</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-2">
+								Josh and Claudia from Authentic Buyers Agency came to JUX for help in establishing their new companies branding.
+								</p>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+								Claudia and Jarryd had already worked together on another project and knew JUX would deliver exactly what they needed.
+								</p>
+							</a>
+						</div>
+					</div>
+					
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-3 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="/goulashgalley" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="/assets/img/goulashgalley/hungary.svg" class="mx-auto h-full md:h-64 rounded-t p-2">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">Adobe Illustrator</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Who's Hungary?</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-2">
+								A food van business under the Goulash Galley banner, Veronica asked for a simple logo that captured the heart of Hungary.
+								</p>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+								The use of Hungarian flag dynamically reflected in it's country's namesame is exactly what Veronica was after.
+								</p>
+							</a>
+							</div>
+					</div>
+
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-3 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="/rtm" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="/assets/img/rtm/brand_black.svg" class="mx-auto h-full md:h-64 rounded-t p-2">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">Adobe Illustrator</p>
+								<div class="w-full  font-bold text-xl text-gray-900 px-6">RTM Gardening and Maintenance</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									RTM Gardening and Maintenance was our first JUX client, Sarah and Rob were looking for a simple smart logo that reflected 
+									their companies back to basics approach for Gardening and Maintenance services.
+								</p>
+							</a>
+						</div>
+					</div>		
+			</div>
+    </div>
+  {% endif %}
+{% endfor %}

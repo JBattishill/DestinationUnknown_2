@@ -1,0 +1,17 @@
+{
+  "baseURL": "https://juxforyou.netlify.app",
+  "author": "JUX",
+  "description": "JUX Design Studio",
+  "title": "JUX",
+  "language": "en",
+  "social": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/juxforyou/?hl=en"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jarrydbattishill/"
+    }
+  ]
+}

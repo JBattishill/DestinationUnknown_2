@@ -1,0 +1,340 @@
+{% for item in collections.sections %}
+{% if item.data.type === 'blog' %}  
+
+<div class="w-full min-h-screen flex flex-col justify-center items-center">		
+  
+  <!--Breadcrumbs-->
+  <div class="w-full items-left container px-2 md:px-6 lg:px-4 max-w-6xl mx-auto">
+    <nav class="flex py-6" aria-label="Breadcrumb">
+      <ol role="list" class="flex overflow-hidden text-gray-800 border border-gray-800 rounded-lg">
+        <li class="flex items-center">
+        <a class="flex items-center h-10 px-4 transition-colors bg-gray-200 hover:text-gray-900" href="/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <span class="ml-1.5 font-medium text-xs"> Home </span>
+        </a>
+        </li>
+
+        <li class="relative flex items-center">
+        <span class="absolute inset-y-0 w-4 h-10 bg-gray-200 -left-px clip"> </span>
+        <a
+          class="flex items-center h-10 pl-6 pr-2 text-xs transition-colors bg-gray-50 hover:text-gray-900"
+          href="/blog"
+        >
+          Blog
+        </a>
+        </li>
+      </ol>
+    </nav>
+  </div>  
+
+	<!--Container-->
+	<div class="container px-0 lg:px-2 mx-auto justify-center items-center">
+      
+    <!--Intro-->
+    <div class="w-full flex flex-col flex-grow flex-shrink">	
+      <div class="p-6 text-center items-center mx-auto overflow-hidden">
+        <h1 class= "mx-auto text-center text-gray-800 font-bold text-2xl md:text-5xl">Uni Student Blog </h1>
+        <p class="max-w-xl mx-auto mt-4 text-gray-800">
+        This is where Jarryd keeps his writing that is required for his University classes. Feel free to peruse them and learn more about our creative mind.
+        </p>
+      </div> 
+    </div> 
+
+    <!--Container background, goes under intro-->
+    <div class="mx-0 md:mx-2 animatedbg min-h-screen w-full">
+
+      <!--First Card Box-->
+      <div class="flex h-full p-2 md:p-6 lg:p-10 rounded overflow-hidden items-center">
+        <div class="w-full py-6 md:py-12 mx-auto flex bg-white flex-wrap rounded items-center">
+
+          <!--Left Card--> 
+          <div class="w-full md:w-1/2 flex flex-col flex-grow flex-shrink order-last md:order-first">
+            <div class="flex-1 bg-white px-2 md:px-6 rounded overflow-hidden">
+              <h2 class="w-full text-center font-bold text-3xl lg:text-5xl text-gray-800 py-4 md:py-6">Unit Reflection</h2>
+                <div class="max-w-xl space-y-4 text-left text-md text-gray-600">
+
+                  <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">What I learned</h4>
+                  <p>
+                    I learned a lot about myself and where I am actually at during the goal setting and personality tests of weeks 2 and 3. I found I was overconfident in a few areas. I also learned that my next career goal is not to become a UI/UX Designer, it is to become a Product Designer.
+                  </p>
+
+                  <h4 class="mt-4 font-bold text-xl md:text-2xl xl:text-4xl">What I found useful</h4>            
+                  <p>
+                    Skills audit and goal setting activities were very useful for me, as was the time tracking exercise.
+                    Most useful I would say is the final project as this allowed me to push myself to create a portfolio using techniques I hadn’t tried yet.
+                  </p>
+
+                  <h4 class="mt-4 font-bold text-xl md:text-2xl xl:text-4xl">What held me back</h4>
+                  <p>
+                    A personal situation affected my ability to attend some classes and the networking event this semester. I will also admit, that I underestimated how difficult this class would be which led to bad time management for completing the first assignment. 
+                  </p>
+
+                  <h4 class="mt-4 font-bold text-xl md:text-2xl xl:text-4xl">How could I improve my outcomes next semester</h4>            
+                  <p>
+                    I will be taking a break over Winter and potentially Semester 2 to have my full attention available for my significant personal situation. I will also take all of my classes seriously for the rest of my degree.
+                  </p>
+
+                  <h4 class="mt-4 font-bold text-xl md:text-2xl xl:text-4xl">What I hope to build on in future units</h4>                
+                  <p> 
+                      I want to continue to work on my growth mindset.
+                  </p>
+                  <p class="-mt-3">
+                      This includes a focus on being better with my time management and an awareness of overconfidence. I also want to continue to develop my design skills using Adobe Creative Suite and coding skills in HTML, CSS, Javascript and Nunjucks.
+                    </p>
+
+                </div>
+            </div>
+          </div>
+
+          <!--Right Card--> 
+          <div class="w-full h-full mt-6 md:mt-0 md:w-1/2 flex flex-col flex-grow flex-shrink order-first md:order-last">	
+            <div class="flex-1 items-center overflow-hidden">	
+            <img
+              class="object-cover items-center mx-auto w-full h-48 sm:h-80 md:h-3/4 p-2 sm:p-4 md:p-6"
+              src="https://images.unsplash.com/photo-1580052484993-08915f20deae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+              alt="A reflection of the photographers eye is captured in a peice of a mirror they are holding"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Second Card Box-->
+      <div class="flex h-full p-2 md:p-6 lg:p-10 rounded overflow-hidden items-center">
+        <div class="w-full py-6 md:py-12 mx-auto flex bg-white flex-wrap rounded items-center">
+
+          <!--Left Card--> 
+          <div class="w-full h-full mt-6 md:mt-0 md:w-1/2 flex flex-col flex-grow flex-shrink">	
+            <div class="flex-1 items-center overflow-hidden">	
+              <img
+              class="object-cover items-center mx-auto w-full h-48 sm:h-80 md:h-3/4 p-2 sm:p-4 md:p-6"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="Colleagues high-fiving"
+              />
+            </div>
+          </div>
+          
+          <!--Right Card--> 
+          <div class="w-full md:w-1/2 flex flex-col flex-grow flex-shrink">
+            <div class="flex-1 bg-white px-2 md:px-6 rounded overflow-hidden">
+              <h2 class="w-full text-center text-base font-bold text-2xl lg:text-4xl text-gray-800 py-4 md:py-6">Industry Engagement Reflection</h2>
+              <div class="max-w-xl space-y-4 text-left text-md text-gray-600">
+                
+                <p class="font-bold text-sm">A personal situation affected my ability to attend some classes and the networking event this semester, Kylie and Mikaela are both aware of this.
+                </p>
+                <p class="-mt-3 font-bold text-sm">I have chosen to reflect on a time when I have networked with the Business Area of a client for my design project at work.
+                </p>
+
+                <p>
+                  Before the event, I was very excited and hopeful, I love the idea of meeting new people, especially in a situation that’s directly connected to my goals. 
+                  I do sometimes worry that I could make a fool of myself in front of future potential key players but that quickly passes.
+                  My feelings during the event fluctuated, I started very nervously, I usually do when I am in a situation where I don’t know many people.
+                  Once I start to talk to a few people, I always find that I settle down a bit and relax as I get to learn more about everyone.
+                </p>
+
+                <p>
+                  I found the most valuable thing was getting to know the people behind the colleague or peer. 
+                  I loved finding out about that person's hobbies, pets, interests, favourite travel destinations or what they do on weekends. 
+                  To me, this builds real connections and helps both the conversation and the relationship go further than “what can you do for me?”.
+                </p>
+
+                <p>
+                  I made connections with Product Owners, System Admins and staff who will use our new system, I also was able to forge deeper connections with colleagues from my team.
+                  For future networking events, I will look to engage a little earlier, and try not to be so nervous at the start of the event. 
+                  I could also consider getting a conversation starter, maybe a badge that says “Ask me about my dog!”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Third Card Box-->
+      <div class="flex h-full p-2 md:p-6 lg:p-10 rounded overflow-hidden items-center">
+        <div class="w-full py-6 md:py-12 mx-auto flex bg-white flex-wrap rounded items-center">
+
+          <!--Left Card--> 
+          <div class="w-full md:w-1/2 flex flex-col flex-grow flex-shrink order-last md:order-first">
+            <div class="flex-1 bg-white px-2 md:px-6 rounded overflow-hidden">
+              <h2 class="w-full text-center font-bold text-3xl lg:text-5xl text-gray-800 py-4 md:py-6">Portfolio Messaging</h2>
+                <div class="max-w-xl space-y-4 text-left text-md text-gray-600">
+                  
+                  <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Role</h4>
+                  <p>The role of my portfolio is to capture and reflect who I am as both a designer and person. 
+                    I want to use it to showcase work that I am proud of, kind words said by my clients and 
+                    even some of my favourite colours in the background buttons or text.
+                  </p>
+                  
+                  <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Objective</h4> 
+                  <p> To attract clients for my Design Studio and to get future work in the Interaction Design field.
+                  </p>   
+
+                  <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Messaging</h4> 
+                  <p>I want my portfolio to say:</p>             
+                  <p class="-mt-3">
+                    “I am a friendly and understanding person who wants to hear what you have to say and work with you to make something beautiful and unique. 
+                    If you work with me, the final product can be exactly what you want, even if you didn't know what you wanted when we started”.
+                  </p>
+                </div>
+            </div>
+          </div>
+
+          <!--Right Card--> 
+          <div class="w-full h-full mt-6 md:mt-0 md:w-1/2 flex flex-col flex-grow flex-shrink order-first md:order-last">	
+            <div class="flex-1 items-center overflow-hidden">	
+            <img
+              class="object-cover items-center mx-auto w-full h-48 sm:h-80 md:h-3/4 p-2 sm:p-4 md:p-6"
+              src="https://images.unsplash.com/photo-1585995603310-9cc1bff2894d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="A typewriter with the message, be amazing, written on it."
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fourth Card Box-->
+      <div class="flex h-full p-2 md:p-6 lg:p-10 rounded overflow-hidden items-center">
+        <div class="w-full py-6 md:py-12 mx-auto flex bg-white flex-wrap rounded items-center">
+
+          <!--Left Card--> 
+          <div class="w-full h-full mt-6 md:mt-0 md:w-1/2 flex flex-col flex-grow flex-shrink">	
+            <div class="flex-1 items-center overflow-hidden">	
+              <img
+              class="object-cover items-center mx-auto w-full h-48 sm:h-80 md:h-3/4 p-2 sm:p-4 md:p-6"
+              src="https://images.unsplash.com/photo-1596461009523-7d647a4e2399?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="A steaming cup of coffee next to a stack of old books"
+              />
+            </div>
+          </div>
+          
+          <!--Right Card--> 
+          <div class="w-full md:w-1/2 flex flex-col flex-grow flex-shrink">
+            <div class="flex-1 bg-white px-2 md:px-6 rounded overflow-hidden">
+              <h2 class="w-full text-center text-base font-bold text-2xl lg:text-4xl text-gray-800 py-4 md:py-6">Literature Review</h2>
+              <div class="max-w-xl space-y-4 text-left text-md text-gray-600">
+                <p class="font-bold italic">There is nothing more unknown or unknowable than a person’s true potential (Dweck, 2006)</p>
+                <p class="-mt-3">
+                  If this statement is true, then it can be said that nothing is more unknowable than a designer’s true potential. 
+                  The purpose of this study is to explore how a person can maximise their potential and answer the question; 
+                  “How can a designer become the best designer they are capable of becoming?”.                  
+                </p>
+
+                <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Unlocking potential</h4>
+                <p>
+                  Dweck (2006) puts forward that there are two mindsets that a person can have, fixed or growth, this affects how the person views themself and how they view others.
+                </p>
+                <p class="-mt-2">
+                  A person with a fixed mindset believes that they are what they are, they believe a person can only ever has a set amount of intelligence, 
+                  a singular personality, and a certain moral character.
+                </p>
+                <p class="-mt-3">
+                  A person with a growth mindset believes that all humans have qualities that can be cultivated through commitment, practice and effort. 
+                  A person with a growth mindset has endless potential and Dweck stipulated that everyone can change their mindset.
+                </p>
+
+                <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Understanding yourself and others</h4>
+                <p>
+                Students who set and strive for smart and achievable goals are more resilient in challenging times (Stewart, 2019) and in turn, 
+                students with goals are more often successful than those that don’t. Research from Bressler et al. (2010)
+                indicates this may be due to those students having higher levels of hope and academic optimism, which in turn, can lead to stronger grade performance.
+                </p>
+                <p>
+                All humans experience emotions, but not all can recognise emotions or why they are experienced at certain times. 
+                A person can learn to understand and manage their emotions better, as they do so, Hasson (2014) theorised that they can become more empathetic and
+                 increase their communication skills. Emotional intelligence, empathy and communication skills are critical for a designer.
+                </p>
+
+                <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Good and Ethical Design</h4>
+                <p>
+                Dieter Ram’s ten principles of good design state that Good Design should be innovative, useful, aesthetic, understandable, unobtrusive, honest, long lasting,
+                thoroughly detailed, yet simply designed and environmentally friendly. (Shuffle Magazine, n.d.).
+                </p>
+                <p>
+                Design ethics is where morals and design meet, they impact how a designer should engage with clients. It can help the designer assess the ethical significance 
+                or moral worth of their output. Buchanan, R. (n.d.).
+                Good and ethical design is respectful of all cultures, even down to an individual community level. The Australian Indigenous Design Charter (Kennedy et al. 2015)
+                reminds designers to respect the diversity of Aboriginal and Torres Strait Islander cultures by following community specific cultural protocols.
+                </p>
+
+                <h4 class="font-bold text-xl md:text-2xl xl:text-4xl">Conclusion</h4>
+                <p>
+                  In conclusion, for a designer to become the best designer they are capable of becoming, they should practice a growth mindset and set goals, experience emotions while developing their emotional intelligence, empathy and communication skills.
+                  The designer can then use those new found skills to understand the importance of good and ethical design and the depth of knowledge that can be used in their journey for respectful engagement.
+               </p>
+
+                <!--References-->
+                    <h4 class="mt-12 font-bold text-xl md:text-2xl xl:text-4xl">References</h4>
+                    <p>
+                    Stewart, I. (2019, April 1). Successful students have goals – A Guide for Successful Students. Pressbooks. Retrieved April 25, 2022, from
+                    <a class="text-blue-600 underline"href="https://ecampusontario.pressbooks.pub/studyprocaff/chapter/chapter-1/ ">https://ecampusontario.pressbooks.pub/studyprocaff/chapter/chapter-1/</a>
+                    </p>
+
+                    <p>
+                    Bressler, L. E., Bressler, M. A., & Bressler, M. S. (2010). 
+                    THE ROLE AND RELATIONSHIP OF HOPE, OPTIMISM AND GOAL SETTING IN ACHIEVING ACADEMIC SUCCESS: A STUDY OF STUDENTS ENROLLED IN ONLINE ACCOUNTING COURSES. www.researchgate.net. Retrieved April 25, 2022, from
+                    <a class="text-blue-600 underline"href="https://www.researchgate.net/profile/Martin-Bressler/publication/282613197_THE_ROLE_AND_RELATIONSHIP_OF_HOPE_OPTIMISM_AND_GOAL_SETTING_IN_ACHIEVING_ACADEMIC_SUCCESS_A_STUDY_OF_STUDENTS_ENROLLED_IN_ONLINE_ACCOUNTING_COURSES/links/561427e808ae983c1b405483/THE-ROLE-AND-RELATIONSHIP-OF-HOPE-OPTIMISM-AND-GOAL-SETTING-IN-ACHIEVING-ACADEMIC-SUCCESS-A-STUDY-OF-STUDENTS-ENROLLED-IN-ONLINE-ACCOUNTING-COURSES
+                    ">www.researchgate.net/profile/Martin-Bressler/...</a>
+                    </p>
+
+                    <p>
+                    Shuffle Magazine. (n.d.). Dieter Rams: 10 Principles for Good Design. www.Readymag.Com. Retrieved April 27, 2022, from   
+                    <a class="text-blue-600 underline"href="https://readymag.com/shuffle/dieter-rams/products/">https://readymag.com/shuffle/dieter-rams/products/ </a>
+                    </p>
+
+                    <p>
+                    Kennedy, R., Kelly, M., Martin, B., & Greenaway, J. (2015). AUSTRALIAN INDIGENOUS DESIGN CHARTER. www.Design.Org.Au. Retrieved April 27, 2022, from 
+                    <a class="text-blue-600 underline"href="https://www.design.org.au/documents/item/216">https://www.design.org.au/documents/item/216</a>
+                    </p>
+
+                    <p>
+                    Buchanan, R. (n.d.). Design Ethics | Encyclopedia.com. Www.Encyclopedia.Com. Retrieved April 25, 2022, from 
+                    <a class="text-blue-600 underline"href="https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/design-ethics
+                    ">https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/design-ethics</a>
+                    </p>
+
+                    <p>
+                    Kennedy, R., Kelly, M., Martin, B., & Greenaway, J. (2018). International Indigenous Design Charter. www.Theicod.Org.
+                    <a class="text-blue-600 underline"href="https://www.theicod.org/resources/international-indigenous-design-charter">
+                    https://www.theicod.org/resources/international-indigenous-design-charter</a>
+                    </p>
+
+                    <p>
+                    Lufkin, B. D. V. (2018, January). Is this the best time to be productive? BBC Worklife. Retrieved April 28, 2022, from
+                    <a class="text-blue-600 underline"href="https://www.bbc.com/worklife/article/20180102-is-this-the-best-time-for-productivity ">
+                    https://www.bbc.com/worklife/article/20180102-is-this-the-best-time-for-productivity</a>
+                    </p>
+                    
+                    <p>
+                    Ind.ie — Ethical Design Manifesto. (n.d.). Ind.Ie. Retrieved April 29, 2022, from
+                    <a class="text-blue-600 underline"href="https://ind.ie/ethical-design/">https://ind.ie/ethical-design/</a>
+                    </p>
+                    
+                    <p>
+                    Minor-Cooley, D., & Parks-Yancy, R. (2020). The Power of the Brand: Personal Branding and Its Effect on Job Seeking Attributes. Journal of Internet Commerce, 19(3), 241–261. 
+                    <a class="text-blue-600 underline"href="https://doi.org/10.1080/15332861.2020.1777028">https://doi.org/10.1080/15332861.2020.1777028</a>
+                    </p>
+                  
+                    <p>
+                    Hasson, G. (2014). Emotional Intelligence: Managing Emotions to Make a Positive Impact on Your Life and Career. Capstone.
+                    </p>
+                  
+                    <p>
+                    Dweck, C. S. (2006). MINDSET: NEW PSYCHOLOGY OF SUCCESS. Ballantine Books.
+                    </p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+{% endif %}
+{% endfor %}

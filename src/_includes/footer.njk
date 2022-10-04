@@ -1,0 +1,56 @@
+<footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
+  <div class="text-center pr-0 sm:pr-8 py-4">
+    <ul class="list-none">
+      {% for item in site.social %}
+        <li>
+          <a class="text-gray-800 hover:text-pink-950 no-underline hover:underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-pink-950 mx-auto sm:mx-0"></div>
+  <div class="text-center px-8 py-4">
+    <ul class="list-none">
+      <li>
+        <a class="text-gray-800 hover:text-pink-950 no-underline hover:underline" href="{% if isFront %}/story{% else %}{{ site.baseURL }}//story{% endif %}">About us</a>
+      </li>
+      <li>
+        <a class="text-gray-800 hover:text-pink-950 no-underline hover:underline" href="{% if isFront %}/blog{% else %}{{ site.baseURL }}//blog{% endif %}">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-pink-950 mx-auto sm:mx-0"></div>
+  <div class="text-center pl-0 sm:pl-8 py-4">
+    <ul class="list-none">
+      <li>
+        <a class="text-gray-800 hover:text-pink-950 no-underline hover:underline" href="/contactus">Contact us</a>
+      </li>
+      <li>
+        <a class="text-gray-800 hover:text-pink-950 no-underline hover:underline" href="/portfolio">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<div class="w-full mx-auto text-center pr-0 sm:pr-8 py-4">
+  <div class="block w-80; mx-auto"><a href='https://ind.ie/ethical-design'>
+  <img class="mx-auto mb-0" alt='Ethical Design Stamp' src='https://ind.ie/ethical-design/images/ethical-design-badge-tiny.svg'></a>
+  <p>We practice <strong>Ethical</strong> Design.</p>
+  </div>
+  <span class="py-8 block text-center text-gray-800 text-xl font-light">
+    &copy; Jarryd Battishill - u3092157
+  </span>
+</div>
+<div class="">
+  <a id="btt"
+    class="hidden fixed bottom-0 right-0 rounded-tl-lg md:rounded mb-0 mr-0 md:mb-16 md:mr-16 px-3 py-1.5 md:px-8 md:py-2.5 
+     bg-gray-800 opacity-80 text-gray-50 hover:opacity-100 hover:bg-pink-950 no-underline shadow-xl" 
+    href="#top" title="Back to top"> 
+    <p class= "font-bold text-gray-50">Back to top</p> 
+    </a>
+</div>
+<div class="fixed bottom-0 left-0 mb-0 ml-0 md:mb-16 md:ml-16">
+  <a href="/contactus" target="_blank" rel="noopener" title="Contact JUX"
+    class="block rounded-tr-lg bg-gray-800 opacity-80 md:rounded px-2.5 py-2 md:px-6 md:py-2 hover:bg-pink-950 hover:opacity-100 shadow-xl">
+    <img src="/assets/img/white_env.svg" class="block h-5 md:h-7" alt="Contact Us">
+  </a>
+</div>

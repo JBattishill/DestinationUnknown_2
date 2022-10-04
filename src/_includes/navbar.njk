@@ -1,0 +1,21 @@
+<nav
+  class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-5 pink-950 sm:bg-transparent">
+  <div
+    class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
+    <a href="/" class="no-underline"><img src="/assets/img/JUXlogo.svg" alt="JUX Logo"
+        class="h-24 py-1"></a>
+    <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();" aria-label="Show Menu"><span
+        class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span></button>
+  </div>
+  <div id="menu"
+    class="w-full sm:w-auto self-end sm:self-center hidden sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0">
+    <a class="text-gray-50 font-bold hover:text-pink-950 text-2xl text-center w-full no-underline  sm:w-auto sm:pr-4 py-2 sm:py-1"
+      href="{% if isFront %}/story{% else %}{{ site.baseURL }}//story{% endif %}">About us</a>
+    <a class="text-gray-50 font-bold hover:text-pink-950  text-2xl text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
+      href="{% if isFront %}/blog{% else %}{{ site.baseURL }}//blog{% endif %}">Blog</a>
+    <a class="text-gray-50 font-bold hover:text-pink-950  text-2xl text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
+      href="{% if isFront %}/portfolio{% else %}{{ site.baseURL }}//portfolio{% endif %}">Portfolio</a>
+    <a class="text-gray-50 font-bold hover:text-pink-950  text-2xl text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
+      href="{% if isFront %}/contactus{% else %}{{ site.baseURL }}//contactus{% endif %}">Contact us</a>
+  </div>
+</nav>
