@@ -1,0 +1,18 @@
+[
+    { 
+        "Address":"Address 1",
+	    "Suburb": "Suburb 1",
+		"Architect":"Architect 1"
+    },
+    { 
+        "Address":"Address 2",
+	    "Suburb": "Suburb 2",
+		"Architect":"Architect 2"
+    },
+    { 
+        "Address":"Address 3",
+	    "Suburb": "Suburb 3",
+		"Architect":"Architect 3"
+    }
+
+]

@@ -28,7 +28,9 @@
   },
   "homepage": "https://github.com/JBattishill/LandingPage-Project2#readme",
   "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
+    "dotenv": "^16.0.3",
     "eleventy": "^1.0.6"
   }
 }
