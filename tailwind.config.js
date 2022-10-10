@@ -8,6 +8,10 @@ module.exports = {
     './src/**/*.md',
     './src/**/*.11ty.js'
   ],
+  content: [
+    './src/**/*.html',
+    './src/**/*.njk',
+  ],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -984,14 +988,18 @@ module.exports = {
     extend: {
       colors: {
         pink: {
-          950: '#F7A1C9',
+          950: '#fcbdb7',
+        },
+        yellow: {
+          950: '#f2bd2c',
         },
         red: {
           950: '#621A21',
           1000: '#691D24'
         },
         green: {
-          950:'#58A183',
+          950:'#c6e6d7',
+          100:'#173a2c',
         }
       },
       screens: {

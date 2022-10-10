@@ -1,0 +1,48 @@
+{% for item in collections.sections %}
+  {% if item.data.type === 'location' %}
+    <div id="location" class="w-full min-h-screen flex flex-col justify-center items-center py-12">
+      <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
+        <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">{{ item.data.title }}</h2>
+        <div class="font-light text-black text-xl">
+          {{ item.templateContent | safe }}
+        </div>
+
+        <div class = "w-full inline-block justify-center text-center m-2 bg-green-950 p-2 break-words">
+        <h1 class="my-2"> {{title}} </h1>
+        {{ getLocation | dump }}
+         {{ getLocation.hemisphere | dump }}
+        <h4> API Data about London should be above this line</h4>
+        </div>
+      
+        {# 
+        YouTube Tutorial -- Trying to auto build data using For Loop for Buildings - https://www.youtube.com/watch?v=4Uv8C1wco6U
+               
+        <div class = " my-2 buildingContainer flex flex-row w-3/4 justify-center">
+          {% for building in buildings %}
+            {% Building Address=building.Address, Suburb=building.Suburb, Architect=building.Architect%}
+          {% endfor %}
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <button type="submit">Send</button>
+</form>
+       #}
+
+        </div>
+       <div class="my-4 flex flex-row w-full justify-center">
+        <a class="px-10 py-2 text-yellow-950 bg-green-900 rounded-lg shadow-md text-lg hover:bg-gray-800 hover:text-gray-50" 
+        href="#photos">Photos</a>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
