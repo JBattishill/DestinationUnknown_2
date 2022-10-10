@@ -6,13 +6,23 @@
         <div class="font-light text-black text-xl">
           {{ item.templateContent | safe }}
         </div>
+      
+      <div class="my-4 flex flex-row w-full justify-center">
+        <a class="px-10 py-2 text-yellow-950 bg-green-900 rounded-lg shadow-md text-lg hover:bg-gray-800 hover:text-gray-50" 
+        href="#location">Location</a>
+      </div>
 
-        <div class = "w-full inline-block justify-center text-center m-2 bg-green-950 p-2 break-words">
+        <div class = "w-full inline-block justify-center text-center my-2 bg-green-950 p-2 break-words">
         <h1 class="my-2"> {{title}} </h1>
         {{ getPhotos | dump }}
-        <h4> API Data about London should be above this line</h4>
+        <h1 class="my-6 text-2xl font-bold"> Photos of London should be above this line</h1>
         </div>
-      
+
+    <div class = "w-full my-4 py-4 bg-gray-900 break-words">
+      <a class ="w-full mb-4 flex flex-row text-center justify-center text-white text-2xl" href="https://www.pexels.com">Photos provided by Pexels</a>
+      <img class ="w-64 mb-4 flex flex-row mx-auto justify-center self-center" src="https://images.pexels.com/lib/api/pexels-white.png" />
+      </a>
+
         {# 
         YouTube Tutorial -- Trying to auto build data using For Loop for Buildings - https://www.youtube.com/watch?v=4Uv8C1wco6U
                

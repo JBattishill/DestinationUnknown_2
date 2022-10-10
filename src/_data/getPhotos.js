@@ -1,45 +1,63 @@
-// dotenv used if apiKey needed
+// // dotenv used if apiKey needed
 // require('dotenv').config();
 
-// 11ty Fetch is used to API calls
-const EleventyFetch = require("@11ty/eleventy-fetch");
+// // testing dotenv can call correct API Key
+// console.log(process.env.PEXEL_KEY)
 
-// Not used yet...
-// const address = '';
-// const suburb = '';
-// const architect = '';
-// const equator = '0'
+// // 11ty Fetch is used to API calls
+// const EleventyFetch = require("@11ty/eleventy-fetch");
+// const createClient = require("pexels");
+// const client = getPhotos(process.env.PEXEL_KEY);
+// const query = 'London Winter';
+// const sepPhotoStorage = [];
 
 
-// async function to get location details
-async function getLocation({}) {
+// // Not used yet...
+// // const address = '';
+// // const suburb = '';
+// // const architect = '';
+// // const equator = '0'
 
-    //pull data from GeoApify - London only, limited to 1 response, formatted in JSON
-    const url = 'https://api.geoapify.com/v1/geocode/search?text=london&limit=1&format=json&apiKey=234979e2ff9e423095e4b2c869c1c97b'
 
-    const response = EleventyFetch(url, {
-        duration: "1d", // save for 1 day - change to h for hours
-        type: "json",
-});
-// name data reponse apiData for clarity
-const apiData = response;
-let tempHemisphere = "";
-const locationLat = apiData.lat1;
+// // async function to get location details
 
-// target latitude
-if (locationLat > 0)
-    console.log ("North"),
-    tempHemisphere = "Northern",
-    console.log (apiData.lat1);
+// async function getPhotos({}) {
+    
 
-else 
-    console.log ("South"),  
-    tempHemisphere = "Southern"
-    console.log (apiData.lat1);
+    
+//     const url = 'https://api.pexels.com/v1/search'
 
-const hemisphere = tempHemisphere
+//     setTimeout(createClient),1000
+//     (client.photos.search({ query, per_page: 1 }).then(photos => sepPhotoStorage = photos));
 
-return hemisphere, apiData;
-}
+//     const photoStorage = photos
 
-module.exports = getLocation;
+//     console.log("photoStorage")
+//     console.log(photoStorage)
+
+//     console.log("sepPhotoStorage") 
+//     console.log(sepPhotoStorage) 
+
+//     return photoStorage;
+ 
+// }
+
+// module.exports = getPhotos
+
+
+// // // async function to get location details
+// // async function getPhotos({}) {
+
+// //     //pull data from GeoApify - London only, limited to 1 response, formatted in JSON
+// //     const url = 'https://api.pexels.com/v1/search'
+
+// //     const response = EleventyFetch(url, {
+// //         duration: "1d", // save for 1 day - change to h for hours
+// //         type: "json",
+// // });
+
+// // const apiData = response
+
+// // return apiData;
+// // }
+
